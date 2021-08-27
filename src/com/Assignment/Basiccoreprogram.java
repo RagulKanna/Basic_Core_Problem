@@ -10,7 +10,7 @@ public class Basiccoreprogram {
         int value;
         for (int i=1;i<=pow;i++)
         {
-            value=(int)Math.pow(2,i);
+            value=(int)Math.pow(i,2);
             System.out.println("\n The value of 2 power "+i+" is "+value);
         }
 
