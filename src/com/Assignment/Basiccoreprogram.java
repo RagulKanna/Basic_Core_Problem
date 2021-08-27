@@ -5,14 +5,17 @@ import java.util.Scanner;
 public class Basiccoreprogram {
         public static void main(String[] args) {
         Scanner y =new Scanner(System.in);
-        System.out.println("Enter the harmonic number  upto you needed: ");
+        System.out.println("Enter the number to be factorize: ");
         int num =y.nextInt();
-        int constant=1;
-        float value = 0.0f;
-        for (int i=1;i<=num;i++)
+        System.out.println("Factor is ");
+        for (int i=2;i<num;i++)
         {
-            value = value + (float) constant / i ;
-        }
-        System.out.println("For The Harmonic value of "+num+" is "+value);
+                while(num%i==0) {
+                        System.out.println(i);
+                        num = num / i;
+                }
+                }
+        if (num>2)
+                System.out.println(num);
     }
 }
